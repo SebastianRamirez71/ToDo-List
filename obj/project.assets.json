@@ -2259,11 +2259,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sebar\\Desktop\\ToDo-List\\ToDoList.csproj",
+      "projectUniqueName": "C:\\Users\\sebar\\Downloads\\ToDo-List\\ToDoList.csproj",
       "projectName": "ToDoList",
-      "projectPath": "C:\\Users\\sebar\\Desktop\\ToDo-List\\ToDoList.csproj",
+      "projectPath": "C:\\Users\\sebar\\Downloads\\ToDo-List\\ToDoList.csproj",
       "packagesPath": "C:\\Users\\sebar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sebar\\Desktop\\ToDo-List\\obj\\",
+      "outputPath": "C:\\Users\\sebar\\Downloads\\ToDo-List\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

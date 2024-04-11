@@ -17,21 +17,21 @@ namespace ToDoList.Controllers
             _service = service;
         }
 
-        [HttpPost("AgregarUsuario")]
+        [HttpPost("usuario")]
         public IActionResult AgregarUsuario([FromBody] UserDTO user)
         {
             var newUser = _service.AgregarUsuario(user);
             return StatusCode(StatusCodes.Status201Created, newUser);
         }
 
-        [HttpGet("Usuarios")]
+        [HttpGet("usuarios")]
         public IActionResult ObtenerUsuarios()
         {
             return Ok(_service.ObtenerUsuarios());
         }
 
-        [HttpDelete]
-        [Route("{id}")]
+        [HttpDelete("usuarios/{id}")]
+        
         public IActionResult EliminarUsuario(int id)
         {
             _service.EliminarUsuario(id);

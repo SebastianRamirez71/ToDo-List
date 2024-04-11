@@ -16,7 +16,7 @@ namespace ToDoList.Controllers
             _service = service;
         }
 
-        [HttpPost("AgregarToDo")]
+        [HttpPost("tarea")]
         public IActionResult AgregarToDo([FromBody] ToDoDTO todo)
         {
             var newToDo = _service.AgregarToDo(todo);
@@ -24,14 +24,13 @@ namespace ToDoList.Controllers
 
         }
 
-        [HttpGet("ToDos")]
+        [HttpGet("tareas")]
         public IActionResult ObtenerToDos()
         {
             return Ok(_service.ObtenerToDos());
         }
 
-        [HttpDelete]
-        [Route("{id}")]
+        [HttpDelete("tareas/{id}")]
         public IActionResult EliminarToDo(int id)
         {
             _service.EliminarToDo(id);
